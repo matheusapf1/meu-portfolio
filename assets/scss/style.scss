@@ -1,0 +1,35 @@
+// Variáveis
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$text-color: #343a40;
+
+// Estilos gerais
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+  background-color: $background-color;
+  line-height: 1.6;
+}
+
+// Estilos do cabeçalho
+header {
+  padding: 2rem 0;
+}
+
+// Estilos do conteúdo principal
+main {
+  min-height: 80vh;
+}
+
+// Estilos do rodapé
+footer {
+  padding: 2rem 0;
+  background-color: $secondary-color;
+  color: white;
+}
+
+// Estilos responsivos
+@media (max-width: 768px) {
+  // Estilos para dispositivos móveis
+}

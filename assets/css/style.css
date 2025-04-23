@@ -1,0 +1,22 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #343a40;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+main {
+  min-height: 80vh;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #6c757d;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
