@@ -3,45 +3,670 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | Desenvolvedor Web</title>
+    <title>Matheus de Albuquerque | Desenvolvedor Web</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Portfólio de [Matheus de Albuquerque] - Desenvolvedor Web especializado em HTML, CSS, JavaScript, React e Node.js.">
+    <meta name="keywords" content="desenvolvedor web, frontend, backend, portfolio, javascript, react, node.js">
+    <meta name="author" content="Matheus de Albuquerque">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- AOS CSS -->
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <!-- Aqui ficará o cabeçalho do site -->
-    </header>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
 
-    <main>
-        <!-- Aqui ficará o conteúdo principal do site -->
-    </main>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Matheus de Albuquerque</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <footer>
-        <!-- Aqui ficará o rodapé do site -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+                    <h1>Olá, eu sou <span class="highlight">Matheus de Albuquerque</span></h1>
+                    <h2>Desenvolvedor <span class="typed-text"></span></h2>
+                    <p>Transformando ideias em experiências digitais incríveis.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-outline-primary">Contato</a>
+                    </div>
+                    <div class="social-icons mt-4">
+                        <a href="https://github.com/matheusapf1" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/matheus-albuquerque-4b1b2b1a2/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:matheusapf1@gmail.com" class="email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-delay="400">
+                    <img src="assets/img/profile.png.jpg" alt="Matheus de Albuquerque" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Sobre Mim</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                </div>
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+                    <div class="about-img-container">
+                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Quem sou eu?</h3>
+                    <p>Sou um desenvolvedor web apaixonado por criar soluções digitais elegantes e funcionais. Com experiência em HTML, CSS, JavaScript, TypeScript, React e Node.js, estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+                    
+                    <h3>Minha Jornada</h3>
+                    <p>Comecei minha jornada na programação em 2024, quando descobri minha paixão por desenvolvimento web. Desde então, tenho trabalhado em diversos projetos que me ajudaram a desenvolver uma compreensão profunda do desenvolvimento web moderno.</p>
+                    
+                    <div class="row mt-4 mb-4">
+                        <div class="col-md-6">
+                            <div class="about-info">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>matheusapf1@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Localização</h4>
+                                    <p>Rio de Janeiro, Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-buttons">
+                        <a href="assets/docs/Currículo Matheus Albuquerque .pdf" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download me-2"></i>Download CV
+                        </a>
+                        <a href="https://github.com/matheusapf1" class="btn btn-outline-primary" target="_blank">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Minhas Habilidades</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">Tecnologias e ferramentas com as quais trabalho</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <!-- Frontend Skills -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">HTML5</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">CSS3</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">React</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">TypeScript</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-server"></i> Backend</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Express</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">MongoDB</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">SQL</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Firebase</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skills-category">
+                        <h3><i class="fas fa-tools"></i> Ferramentas & Outros</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">Git & GitHub</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Responsive Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">UI/UX Basics</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Agile/Scrum</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">Jest/Testing</div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tech-icons">
+                        <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                        <div class="tech-icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="tech-icon"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon"><i class="fab fa-node-js"></i></div>
+                        <div class="tech-icon"><i class="fab fa-npm"></i></div>
+                        <div class="tech-icon"><i class="fab fa-git-alt"></i></div>
+                        <div class="tech-icon"><i class="fab fa-github"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Meus Projetos</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">Aqui estão alguns dos projetos que desenvolvi. Clique para ver mais detalhes.</p>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-12 text-center">
+                    <div class="project-filter" data-aos="fade-up" data-aos-delay="300">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="mobile">Mobile</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row project-container">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="flip-left" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/dado.png.jpg" alt="jogo-do-numero-secreto" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/matheusapf1/jogo-do-numero-secreto" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jogo do Número Secreto</h3>
+                            <p>Um jogo interativo que desafia jogadores a descobrirem um número aleatório através de dicas inteligentes. Desenvolvido com tecnologias modernas para oferecer uma experiência envolvente.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="flip-left" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/financeiro.png.jpg" alt="Gerenciador-Financeiro" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/matheusapf1/Gerenciador-Financeiro" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Sistema de Controle Financeiro Pessoal</h3>
+                            <p>Este projeto é um sistema completo para controle de gastos pessoais, com funcionalidades de login, registro de entradas, despesas, categorias, dashboard com estatísticas e suporte a gastos recorrentes.
+
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item Web" data-aos="flip-left" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/tempo.png.jpg" alt="WeatherDash" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://matheusapf1.github.io/dashboard-clima/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/matheusapf1/dashboard-clima" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard</h3>
+                            <p>Dashboard meteorológico interativo que exibe condições climáticas em tempo real e previsões com precisão. Ideal para planejamento diário e análise de padrões climáticos.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="flip-left" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/todo.png.jpg" alt="Blog" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://matheusapf1.github.io/todo-app/" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/matheusapf1/todo-app" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>To Do App</h3>
+                            <p>Um aplicativo de lista de tarefas intuitivo com gerenciamento completo de atividades.</p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>JavaScript</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="flip-left" data-aos-delay="600">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/img/nutri.png.jpg" alt="Nutri Vida" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="https://github.com/matheusapf1" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Nutri Vida</h3>
+                            <p>Site profissional para nutricionista fictícia, com informações de serviços, blog e agendamento.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>SCSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+            <div class="row mt-4">
+                <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="800">
+                    <a href="https://github.com/matheusapf1?tab=repositories" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github me-2"></i>Ver mais no GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="github section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Minha Atividade no GitHub</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">Veja minha contribuição e atividade no GitHub</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="300">
+                    <div class="github-card">
+                        <h3><i class="fab fa-github"></i> Estatísticas</h3>
+                        <div class="github-stats">
+                            <div class="github-stat">
+                                <div class="stat-value" id="repo-count">--</div>
+                                <div class="stat-label">Repositórios</div>
+                            </div>
+                            <div class="github-stat">
+                                <div class="stat-value" id="stars-count">--</div>
+                                <div class="stat-label">Estrelas</div>
+                            </div>
+                            <div class="github-stat">
+                                <div class="stat-value" id="forks-count">--</div>
+                                <div class="stat-label">Forks</div>
+                            </div>
+                        </div>
+                        <div class="github-link">
+                            <a href="https://github.com/matheusapf1" target="_blank">
+                                <i class="fas fa-external-link-alt me-2"></i>Ver Perfil
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400">
+                    <div class="github-card">
+                        <h3><i class="fas fa-code-branch"></i> Últimos Commits</h3>
+                        <div class="github-commits" id="github-commits">
+                            <div class="loading-spinner">
+                                <div class="spinner"></div>
+                                <p>Carregando commits...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="100"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="200">Tem um projeto em mente? Vamos conversar!</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="300">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <p>Estou disponível para freelance, projetos de tempo integral ou discussões sobre tecnologia. Entre em contato!</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Localização</h4>
+                                <p>Rio de Janeiro, Brasil</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>matheusapf1@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p>+55 (21)  993108239</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/matheusapf1" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/matheus-albuquerque-4b1b2b1a2/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/mateusapf/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Seu Nome" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Seu Email" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <textarea class="form-control" name="message" rows="7" placeholder="Sua Mensagem" required></textarea>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensagem
+                                </button>
+                            </div>
+                            <div class="form-message mt-3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-info">
+                        <h3>Matheus de Albuquerque</h3>
+                        <p>
+                            Rio de Janeiro, Brasil<br>
+                            <strong>Email:</strong> matheusapf1@gmail.com<br>
+                            <strong>Telefone:</strong> +55 (21)  993108239<br>
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="https://github.com/matheusapf1" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/matheus-albuquerque-4b1b2b1a2/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/mateusapf/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#home">Início</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#about">Sobre</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#skills">Habilidades</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#projects">Projetos</a></li>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Meus Serviços</h4>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> <a href="#">Desenvolvimento Web</a></li>
+                
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Inscreva-se para receber atualizações sobre meus projetos e artigos</p>
+                    <form action="" method="post">
+                        <input type="email" name="email" placeholder="Seu email"><input type="submit" value="Inscrever">
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <span id="current-year"></span> <strong><span>Matheus de Albuquerque</span></strong>. Todos os direitos reservados
+                </div>
+                <div class="credits">
+                    Desenvolvido com <i class="fas fa-heart"></i> por <a href="#">Matheus de Albuquerque</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
     <!-- AOS JS -->
-    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <!-- GitHub Calendar -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
-    
-    <script>
-        // Inicializa AOS
-        AOS.init();
-    </script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/github-integration.js"></script>
 </body>
 </html>
